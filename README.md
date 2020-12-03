@@ -10,6 +10,6 @@
 1. Firebase Realtime Database to Save User Account
 2. Firebase Storage to Save User Profile Picture
 3. Firebase Crashlytics to Monitor the Error on App
-### Font Still not Consistent(will be update soon)
+### Font Still Inconsistent(will be update soon)
 
 #### more to go
