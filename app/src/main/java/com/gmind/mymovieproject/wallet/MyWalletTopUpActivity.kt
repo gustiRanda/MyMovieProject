@@ -27,6 +27,14 @@ class MyWalletTopUpActivity : AppCompatActivity() {
                 selectMoney(tv_10k)
             }
         }
+
+        tv_25k.setOnClickListener {
+            if (status10k){
+                deselectMoney(tv_25k)
+            } else{
+                selectMoney(tv_25k)
+            }
+        }
     }
 
     private fun selectMoney(textView: TextView){
