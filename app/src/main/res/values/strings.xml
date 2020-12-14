@@ -69,4 +69,6 @@
     <string name="total_bayar">Total Harus Dibayar</string>
     <string name="pembayaran_sukses">Pembayaran Sukses</string>
     <string name="kursi">Kursi </string>
+    <string name="silahkan_melakukan_scanning_pada_counter_tiket_terdekat">Silahkan melakukan scanning pada counter tiket terdekat</string>
+    <string name="tutup">TUTUP</string>
 </resources>

@@ -22,7 +22,7 @@
         android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:layout_marginBottom="17dp"
-        android:text="Silahkan melakukan scanning pada counter tiket terdekat" />
+        android:text="@string/silahkan_melakukan_scanning_pada_counter_tiket_terdekat" />
 
     <Button
         android:id="@+id/btn_close"
@@ -33,5 +33,5 @@
         android:layout_height="wrap_content"
         android:textColor="#FFF"
         android:fontFamily="@font/montserrat"
-        android:text="TUTUP" />
+        android:text="@string/tutup" />
 </LinearLayout>

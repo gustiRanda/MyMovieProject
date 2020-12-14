@@ -69,4 +69,6 @@
     <string name="dipilih">Selected</string>
     <string name="pembayaran_sukses">Payment Succes</string>
     <string name="kursi">Seat </string>
+    <string name="tutup">CLOSE</string>
+    <string name="silahkan_melakukan_scanning_pada_counter_tiket_terdekat">Please scan at the nearest counter</string>
 </resources>
