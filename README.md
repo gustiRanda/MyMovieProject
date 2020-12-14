@@ -5,6 +5,7 @@
 2. OnBoarding Screen
 3. Sign In/Up
 4. Button Navigation Using Fragment
+5. Support Multiple Language (Indonesia and English)
 
 ## Firebase
 1. Firebase Realtime Database to Save User Account
