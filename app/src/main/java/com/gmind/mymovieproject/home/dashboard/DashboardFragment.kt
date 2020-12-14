@@ -74,17 +74,17 @@ class DashboardFragment : Fragment() {
             override fun onDataChange(dataSnapshot : DataSnapshot) {
                 dataList.clear()
                 for (getGetDataSnapshot in dataSnapshot.children){
-                    var film = getGetDataSnapshot.getValue(Film::class.java)
+                    val film = getGetDataSnapshot.getValue(Film::class.java)
                     dataList.add(film!!)
                 }
 
                 rv_now_playing.adapter = NowPlayingAdapter(dataList){
-                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
 
                 rv_coming_soon.adapter = ComingSoonAdapter(dataList){
-                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
             }

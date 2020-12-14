@@ -42,7 +42,7 @@ class CheckoutActivity : AppCompatActivity() {
             total += dataList[a].harga!!.toInt()
         }
 
-        dataList.add(Checkout("Total Harus Dibayar", total.toString()))
+        dataList.add(Checkout(getString(R.string.total_bayar), total.toString()))
 
         rv_checkout.layoutManager = LinearLayoutManager(this)
         rv_checkout.adapter =
@@ -107,7 +107,9 @@ class CheckoutActivity : AppCompatActivity() {
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000))
             .setLights(Color.GREEN, 3000, 3000)
             .setDefaults(Notification.DEFAULT_SOUND)
-            .setContentTitle("Pembayaran Sukses")
+            .setContentTitle(getString(R.string.pembayaran_sukses))
+
+                //on progress updating to english
             .setContentText("Tiket " +datas.judul+ " Berhasil Dibeli")
 
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager

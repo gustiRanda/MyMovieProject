@@ -39,21 +39,21 @@ class SignUpActivity : AppCompatActivity() {
             sEmail = et_email.text.toString()
 
             if (sUsername.equals("")){
-                et_username.error = "Silahkan Isi Username Anda"
+                et_username.error = getString(R.string.silahkan_isi_username)
                 et_username.requestFocus()
             } else if (sPassword.equals("")){
-                et_password.error = "Silahkan Isi Password Anda"
+                et_password.error = getString(R.string.silahkan_isi_password)
                 et_password.requestFocus()
             }else if (sNama.equals("")){
-                et_nama.error = "Silahkan Isi Nama Anda"
+                et_nama.error = getString(R.string.silahkan_ini_nama)
                 et_nama.requestFocus()
             }else if (sEmail.equals("")){
-                et_email.error = "Silahkan Isi Email Anda"
+                et_email.error = getString(R.string.silahkan_isi_email)
                 et_email.requestFocus()
             } else {
                 val usernameStatus = sUsername.indexOf(".")
                 if (usernameStatus >= 0){
-                    et_username.error = "Username Tidak Bisa Menggunakan .(Titik)"
+                    et_username.error = getString(R.string.username_tidak_titik)
                     et_username.requestFocus()
                 } else{
                     saveUser (sUsername, sPassword, sNama, sEmail)
@@ -98,7 +98,7 @@ class SignUpActivity : AppCompatActivity() {
                     startActivity(intent)
 
                 } else {
-                    Toast.makeText(this@SignUpActivity, "User Sudah Digunakan", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@SignUpActivity, getString(R.string.user_sudah_digunakan), Toast.LENGTH_LONG).show()
                 }
            }
 

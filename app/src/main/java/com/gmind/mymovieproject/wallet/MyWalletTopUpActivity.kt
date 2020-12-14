@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_my_wallet_top_up.*
 
 class MyWalletTopUpActivity : AppCompatActivity() {
 
-    private var status10k : Boolean = false
+    private var status : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,33 +21,65 @@ class MyWalletTopUpActivity : AppCompatActivity() {
         }
 
         tv_10k.setOnClickListener {
-            if (status10k){
-                deselectMoney(tv_10k)
+            if (status){
+                deselect(tv_10k)
             } else{
-                selectMoney(tv_10k)
+                select(tv_10k)
             }
         }
 
         tv_25k.setOnClickListener {
-            if (status10k){
-                deselectMoney(tv_25k)
+            if (status){
+                deselect(tv_25k)
             } else{
-                selectMoney(tv_25k)
+                select(tv_25k)
+            }
+        }
+
+        tv_50k.setOnClickListener {
+            if (status){
+                deselect(tv_50k)
+            } else{
+                select(tv_50k)
+            }
+        }
+
+        tv_100k.setOnClickListener {
+            if (status){
+                deselect(tv_100k)
+            } else{
+                select(tv_100k)
+            }
+        }
+
+        tv_200k.setOnClickListener {
+            if (status){
+                deselect(tv_200k)
+            } else{
+                select(tv_200k)
+            }
+        }
+
+        tv_500k.setOnClickListener {
+            if (status){
+                deselect(tv_500k)
+            } else{
+                select(tv_500k)
             }
         }
     }
 
-    private fun selectMoney(textView: TextView){
+    private fun select(textView: TextView){
         textView.setTextColor(resources.getColor(R.color.colorPink))
         textView.setBackgroundResource(R.drawable.shape_line_pink)
-        status10k = true
+        status = true
 
         btn_top_up.visibility = View.VISIBLE
     }
-    private fun deselectMoney(textView: TextView){
+    private fun deselect(textView: TextView){
         textView.setTextColor(resources.getColor(R.color.colorWhite))
         textView.setBackgroundResource(R.drawable.shape_line_white)
-        status10k = false
+        status = false
 
         btn_top_up.visibility = View.INVISIBLE
     }

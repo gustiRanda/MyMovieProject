@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.gmind.mymovieproject.R
 import com.gmind.mymovieproject.model.Checkout
-import java.text.NumberFormat
-import java.util.*
 
 class TiketAdapter(private var data : List<Checkout>,
                    private val listener : (Checkout) -> Unit)
@@ -38,7 +36,7 @@ class TiketAdapter(private var data : List<Checkout>,
 
         fun bindItem(data : Checkout, listener: (Checkout) -> Unit, context: Context){
 
-            tvKursi.setText("Kursi No. "+data.kursi)
+            tvKursi.setText(context.getString(R.string.kursi)+data.kursi)
 
             itemView.setOnClickListener {
                 listener(data)

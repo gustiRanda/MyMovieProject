@@ -69,7 +69,7 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Layar Bioskop"
+        android:text="@string/layar_bioskop"
         android:textColor="@color/colorWhite"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,7 +198,7 @@
         android:drawableLeft="@drawable/ic_rectangle_booked"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:text="Penuh"
+        android:text="@string/penuh"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toStartOf="parent" />
@@ -212,7 +212,7 @@
         android:drawableLeft="@drawable/ic_rectangle_empty"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:text="Kosong"
+        android:text="@string/kosong"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toEndOf="@+id/textView22" />
@@ -226,7 +226,7 @@
         android:drawableLeft="@drawable/ic_rectangle_selected"
         android:drawablePadding="8dp"
         android:gravity="center"
-        android:text="Dipilih"
+        android:text="@string/dipilih"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toEndOf="@+id/textView23" />

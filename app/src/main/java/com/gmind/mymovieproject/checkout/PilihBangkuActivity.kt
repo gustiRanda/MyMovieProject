@@ -74,7 +74,6 @@ class PilihBangkuActivity : AppCompatActivity() {
 
     private fun beliTiket(total: Int) {
         if (total == 0){
-            btn_home.setText("Beli Tiket")
             btn_home.visibility = View.INVISIBLE
         } else {
             btn_home.setText("Beli Tiket($total)")

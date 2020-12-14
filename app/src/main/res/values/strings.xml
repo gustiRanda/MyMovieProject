@@ -13,13 +13,12 @@
     <string name="sign_in">Sign In</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="sign_up">Sign Up</string>
     <string name="nama">Nama</string>
     <string name="alamat_email">Alamat Email</string>
     <string name="upload_nanti">Upload Nanti</string>
     <string name="foto">Foto</string>
     <string name="selamat_datang">Selamat Datang\nIlham</string>
-    <string name="simpan_dan_lanjutkan">Simpan Dan Lanjutkan</string>
+    <string name="simpan_dan_lanjutkan">Simpan dan Lanjutkan</string>
     <string name="sedang_tayang">Sedang Tayang</string>
     <string name="segera_hadir">Segera Hadir</string>
     <string name="sinopsis">Sinopsis</string>
@@ -32,14 +31,12 @@
     <string name="tanggal_dan_waktu">Tanggal dan Waktu</string>
     <string name="bioskop">Bioskop</string>
     <string name="bangku">Bangku</string>
-    <string name="total_bayar">Total Harus Dibayar</string>
     <string name="saldo">Saldo</string>
     <string name="simpan_data">Simpan Data</string>
     <string name="edit_profil">Edit Profil</string>
     <string name="dompetku">Dompetku</string>
     <string name="riwayat">Riwayat</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="lihat_tiket">Lihat Tiket</string>
     <string name="selamat_menonton">Selamat Menonton!</string>
@@ -51,7 +48,25 @@
     <string name="bantuan">Bantuan</string>
     <string name="buat_akun">Buat Akun</string>
     <string name="saldo_anda_tidak_mencukupi">Saldo Anda Tidak Mencukupi</string>
-    <string name="top_up_sekarang">TOP UP Sekarang</string>
+    <string name="top_up_sekarang">Top Up Sekarang</string>
     <string name="lihat_wallet">Lihat Wallet</string>
     <string name="top_up_sukses">Top Up Sukses</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="silahkan_tulis_username">Silahkan Tulis Username Anda</string>
+    <string name="silahkan_tulis_password">Silahkan Tulis Password Anda</string>
+    <string name="user_tidak_ditemukan">User Tidak Ditemukan</string>
+    <string name="password_anda_salah">Password Anda Salah</string>
+    <string name="silahkan_isi_username">Silahkan Isi Username Anda</string>
+    <string name="silahkan_isi_password">Silahkan Isi Password Anda</string>
+    <string name="silahkan_ini_nama">Silahkan Isi Nama Anda</string>
+    <string name="silahkan_isi_email">Silahkan Isi Email Anda</string>
+    <string name="username_tidak_titik">Username Tidak Bisa Menggunakan .(Titik)</string>
+    <string name="user_sudah_digunakan">User Sudah Digunakan</string>
+    <string name="layar_bioskop">Layar Bioskop</string>
+    <string name="penuh">Penuh</string>
+    <string name="kosong">Kosong</string>
+    <string name="dipilih">Dipilih</string>
+    <string name="total_bayar">Total Harus Dibayar</string>
+    <string name="pembayaran_sukses">Pembayaran Sukses</string>
+    <string name="kursi">Kursi </string>
 </resources>

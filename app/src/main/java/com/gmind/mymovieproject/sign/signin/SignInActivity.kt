@@ -39,10 +39,10 @@ class SignInActivity : AppCompatActivity() {
             iPassword = et_password.text.toString()
 
             if (iUsername.equals("")){
-                et_username.error = "Silahkan Tulis Username Anda"
+                et_username.error = getString(R.string.silahkan_tulis_username)
                 et_username.requestFocus()
             } else if(iPassword.equals("")){
-                et_password.error = "Silahkan Tulis Password Anda"
+                et_password.error = getString(R.string.silahkan_tulis_password)
                 et_password.requestFocus()
             } else{
                 pushLogin(iUsername, iPassword)
@@ -60,7 +60,7 @@ class SignInActivity : AppCompatActivity() {
         mDatabase.child(iUsername).addValueEventListener(object : ValueEventListener{
 
             override fun onCancelled(databaseError : DatabaseError) {
-                Toast.makeText(this@SignInActivity, "User Tidak Ditemukan",
+                Toast.makeText(this@SignInActivity, getString(R.string.user_tidak_ditemukan),
                     Toast.LENGTH_LONG).show()
             }
 
@@ -68,7 +68,7 @@ class SignInActivity : AppCompatActivity() {
 
                 val user = dataSnapshot.getValue(User::class.java)
                 if (user == null){
-                    Toast.makeText(this@SignInActivity, "User Tidak Ditemukan",
+                    Toast.makeText(this@SignInActivity, getString(R.string.user_tidak_ditemukan),
                         Toast.LENGTH_LONG).show()
                 } else{
 
@@ -86,7 +86,7 @@ class SignInActivity : AppCompatActivity() {
                         var intent = Intent(this@SignInActivity, HomeActivity::class.java)
                         startActivity(intent)
                     } else{
-                        Toast.makeText(this@SignInActivity, "Password Anda Salah",
+                        Toast.makeText(this@SignInActivity, getString(R.string.password_anda_salah),
                             Toast.LENGTH_LONG).show()
                     }
                 }
